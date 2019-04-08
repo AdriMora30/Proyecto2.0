@@ -1,0 +1,35 @@
+*{
+    margin: 5;
+    padding: 5;
+}
+body{
+  font-family:sans-serif ;
+} 
+
+h1{
+    color: white;
+    font-size: 50;
+}
+#uno{
+  color: white;
+font-size: 25;
+}
+#dos{
+    margin:10px auto;
+	display:block;
+    width: 500;
+    height: 350;
+}
+#img{
+    float: right;
+    width: 280;
+    height: 280;
+}
+#img2{
+   float: left;
+    width: 280;
+    height: 280; 
+}
+a{
+    color:white;
+}
