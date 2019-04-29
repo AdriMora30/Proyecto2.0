@@ -1,21 +1,18 @@
 <DOCTYPE! html>
-    <html>
+    <html lang="es">
         <head>
             <meta charset="utf-8">
             <title>REGISTRO</title>
             <link rel="stylesheet" type="text/css" href="Formulario.css">
         </head>
-        <body class="n">
-            <header><img src="Imagenes/header.png"></header>
-            <h1 >Registrate</h1>
-            <h2><b>Registro de Usuario</b></h2>
-            <h2>Nombre</h2>
-            <h2><input type="text" name="nom_control" autofocus registros/></h2>
-            
-            <h2>Apellidos</h2>
-            <h2><input type="text" name="nom_control" autofocus registros/></h2>
-            
-            <h2>Correo Electronico</h2>
-            <h2><input type="text" name="nom_control" autofocus registros/></h2>
+        <body>
+            <form action="">
+                <h2>Dinos lo que piensas</h2>
+                <input type="text" name="Nombre" placeholder="Nombre" required>
+                <input type="text" name="Correo" placeholder="Correo Electronico" required>
+                <input type="text" name="Telefono" placeholder="Teléfono">
+                <textarea name="Mensaje" placeholder="Escriba aquí su mensaje" required></textarea>
+                <input type="submit" value="ENVIAR" id="boton">
+            </form>
         </body>
     </html>

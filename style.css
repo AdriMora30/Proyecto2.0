@@ -1,0 +1,166 @@
+body{
+  font-family:"Arial", Serif;
+  background-color:#f4f4f4;
+  overflow-x:hidden;
+}
+
+h1{
+    color: white;
+}
+
+
+ul#menu-horizontal li {
+width:100px;
+widows: inherit;
+float:left;
+display:block;
+position: relative;
+}
+
+ul#menu-horizontal ul {
+display: none;
+position: absolute;
+top: 2;
+left:0;
+margin:0px;
+padding:0px;
+background:#0F94F0;
+}
+
+ul#menu-horizontal ul li {
+display: block !important;
+}
+
+ul#menu-horizontal li:hover ul{
+display: none;
+}
+
+ul#menu-horizontal li:hover ul{
+display: block;
+}
+
+#menu-horizontal {
+width:500px;
+margin:0 auto;
+}
+
+#menu-horizontal li {
+margin:0px 10px;
+width:100px;
+min-height:5px 20px;
+text-align:center;
+background:#0F94F0;
+list-style:none;
+padding:5px 0;
+}
+
+/* y otro poquito por aquí.. */
+
+#menu-horizontal li:hover {
+background:#0F94F0;
+}
+
+#menu-horizontal li a {
+font:bold 20px Solid Italic;
+color:black;
+text-decoration:none;
+}
+
+#menu-horizontal li ul li{
+float:none;
+width:98px;
+margin:0px 0;
+}
+
+
+.side-nav{
+  height:100%;
+  width:0;
+  position:fixed;
+  z-index:1;
+  top:0;
+  left:0;
+  background-color:#111;
+  opacity:0.9;
+  overflow-x:hidden;
+  padding-top:60px;
+  transition:0.5s;
+}
+
+.side-nav a{
+  padding:10px 10px 10px 30px;
+  text-decoration:none;
+  font-size:22px;
+  color:#ccc;
+  display:block;
+  transition:0.3s;
+}
+
+.side-nav a:hover{
+  color:#fff;
+}
+
+
+.side-nav .btn-close{
+  position:absolute;
+  top:0;
+  right:22px;
+  font-size:36px;
+  margin-left:50px;
+}
+
+#main{
+  transition:margin-left 0.5s;
+  padding:20px;
+  overflow:hidden;
+  width:100%;
+}
+
+@media(max-width:568px){
+  .navbar-nav{display:none}
+}
+
+@media(min-width:568px){
+  /*.open-slide{display:none}*/
+}
+
+.Galeria{
+    width: %;
+    margin: auto;
+    overflow:hidden;
+}
+
+.Galeria ul{
+    display:inline-flex;
+    padding:0;
+    width: 400%;
+    
+    animation: cambio 20s infinite;
+    animation-direction: alternate;
+}
+
+.Galeria li{
+    width: 90%;
+   list-style: none;
+}
+
+.Galeria img{
+    height: 85%;
+    width: 85%;
+}
+
+@keyframes cambio{
+0%{ margin-left: 0;}
+20%{ margin-left: 0;}
+    
+25%{ margin-left: -100%;} 
+45%{ margin-left: -100%;}
+    
+50%{ margin-left: -200%;} 
+70%{ margin-left: -200%;}
+    
+75%{ margin-left: -300%;} 
+100%{ margin-left: -300%;}     
+}
+
+
